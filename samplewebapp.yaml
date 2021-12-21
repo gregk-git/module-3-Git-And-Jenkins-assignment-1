@@ -19,6 +19,8 @@ spec:
           image: gregkolodny/samplewebapp
           ports:
             - containerPort: 80
+      imagePullSecrets:
+      - name: my-secret
 ---
 apiVersion: v1
 kind: Service
